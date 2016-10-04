@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>navigator.connection.type Example</title>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="theme-color" content="#CC6600">
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+        <link rel="stylesheet" type="text/css" href="index.css"/>
+        <link rel="stylesheet" type="text/css" href="fonts.css"/>
+        <title>Eyc pluss Entretenimiento</title>
+        <script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+		<script type="text/javascript">app.initialize();
+		screenWidth = $(window).width();
+		screenHeight = $(window).height();
+		document.addEventListener("deviceready", onDeviceReady, false);
+		// device APIs are available//
+		function onDeviceReady() {
+        navigator.splashscreen.show();
+		}
 
-    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-    <script type="text/javascript" charset="utf-8">
+        </script>
+    </head>
+    <body>
+    
+    <div class="header">
+    <img src="header_icono.svg" alt=""/><a class="btn_volver" href="index.html">Volver</a>
+    
+    </div><!--Header-->
+    
+    <div class="header_page">
+    <img src="header_streaming.svg" alt=""/>
+    <p>
+    <strong>Canal de EycPluss</strong><br/>
+    <span>Eyc pluss. Canal de tv<br/>www.eycpluss.com</span>
+    </p>
+    <div class="limpiar"></div>
+    </div><!--Header-descuentos-->
+    
+    <div class="contenedor">
+    
+      <div class="cont-strem">
+      <iframe src="http://www.ustream.tv/embed/22303374?html5ui" scrolling="no" allowfullscreen webkitallowfullscreen frameborder="0">
+      </iframe>
+      </div><!--Streaming-->
+      
+      <h2 class="senal">Señal Streaming Eyc pluss<br/><strong>Si tiene problemas, compruebe su señal Wifi</strong></h2>
 
-    // Wait for device API libraries to load
-    //
-    document.addEventListener("deviceready", onDeviceReady, false);
+      
+    </div><!--Contenedor-->
 
-    // device APIs are available
-    //
-    function onDeviceReady() {
-        checkConnection();
-    }
-
-        function checkConnection() {
-            var networkState = navigator.connection.type;
-
-            var states = {};
-            states[Connection.UNKNOWN]  = 'Unknown connection';
-            states[Connection.ETHERNET] = 'Ethernet connection';
-            states[Connection.WIFI]     = 'WiFi connection';
-            states[Connection.CELL_2G]  = 'Cell 2G connection';
-            states[Connection.CELL_3G]  = 'Cell 3G connection';
-            states[Connection.CELL_4G]  = 'Cell 4G connection';
-            states[Connection.CELL]     = 'Cell generic connection';
-            states[Connection.NONE]     = 'falsered';
-
-            alert('Connection type: ' + states[networkState]);
-			if(states[networkState]=='falsered'){
-				alert('Sin conexion');
-			}else{
-				alert('Con conexion');
-			}
-        }
-
-    </script>
-  </head>
-  <body>
-    <p>Comprobando conexion.</p>
-  </body>
+    </body>
 </html>
-
