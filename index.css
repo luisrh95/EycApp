@@ -350,10 +350,26 @@ textarea{
 }
 }
 iframe[src="http://www.ustream.tv/embed/22303374?html5ui"]{
+	width: 100%;
+	height: 340px;
+	border: 0 none transparent;
+}
+.cont-strem{
 	width: 95%;
-	height: auto;
+	height: 340px;
 	display: block;
 	margin: auto;
 	margin-top: 10px;
-	border: 0 none transparent;
+	background-image: url(loding.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.senal{
+	text-align: center;
+	font-family: "My-normal";
+	color: #1874D4;
+}
+.senal > strong{
+	font-size: 14px;
+	color: #787878;
 }
