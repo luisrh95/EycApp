@@ -22,6 +22,21 @@
 		}
 
         </script>
+        <script>
+//Check Internaet Connection.................................
+
+  //If User is Online.................................
+
+function onOnline() {               
+            alert("Internet connected")
+}
+//If User is Offline....................................
+document.addEventListener("offline", onOffline, false);
+function onOffline() {
+    alert("Internet not connected")
+}
+    document.addEventListener("online", onOnline, false);
+</script>
     </head>
     <body>
     
