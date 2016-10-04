@@ -34,12 +34,19 @@
             states[Connection.CELL_3G]  = 'Cell 3G connection';
             states[Connection.CELL_4G]  = 'Cell 4G connection';
             states[Connection.CELL]     = 'Cell generic connection';
-            states[Connection.NONE]     = 'No network connection';
+            states[Connection.NONE]     = 'nonered';
 
             alert('Connection type: ' + states[networkState]);
            
-            if (states[networkState]=='WiFi connection')
-            alert("te sale gratis");
+            if(states[networkState]=='nonered'){
+				success: function() {  
+                    $('#descuentos').descuentos.html('erro.html');   
+                }
+			}else{
+				success: function() {  
+                    $('#descuentos').descuentos.html('descuentos.html');   
+                }				
+			}
            
         }
 
