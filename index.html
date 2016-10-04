@@ -38,14 +38,11 @@
 
             alert('Connection type: ' + states[networkState]);
            
-            if(states[networkState]=='nonered'){
-				success: function() {  
+            if(states[networkState]=='nonered'){ 
                     $('#descuentos').descuentos.html('erro.html');   
-                }
 			}else{
-				success: function() {  
                     $('#descuentos').descuentos.html('descuentos.html');   
-                }				
+
 			}
            
         }
