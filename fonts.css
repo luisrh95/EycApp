@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* FUENTES */
+@font-face {
+	font-family: My-normal;
+	src: url(MyriadPro-normal.ttf);
+}
+@font-face {
+	font-family: My-sem-bol;
+	src: url(MyriadPro-Semibold.otf);
+}
+@font-face {
+	font-family: My-bol;
+	src: url(MyriadPro-Bold.otf);
+}
+
+

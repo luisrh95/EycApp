@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+        <link rel="stylesheet" type="text/css" href="index.css"/>
+        <link rel="stylesheet" type="text/css" href="fonts.css"/>
+        <title>Eyc pluss Entretenimiento</title>
+    </head>
+    <body>
+    
+    <div class="header">
+    <img src="header_icono.svg" alt=""/><a class="btn_volver" href="index.html">Volver</a>
+    </div><!--Header-->
+    
+    <div class="header_page">
+    <img src="soporte_header.svg" alt=""/>
+    <p>
+    <strong>Soporte técnico</strong><br/>
+    Solicitar soporte técnico 
+    </p>
+    <div class="limpiar"></div>
+    </div><!--Header-descuentos-->
+    
+    <div class="contenedor cont_soporte">
+    
+    <form  method="post">
+    <label class="n_title">Cual es tu Código</label><br/>
+    <input name="codigo" class="codigo" type="number" />
+    <label class="n_title">En que servicio tienes falla</label><br/>
+    
+    <select name="servicio" class="servicio">
+    <option value="tv">TV</option>
+    <option value="Internet">Internet</option>
+    <option value="TV y Internet">Todos</option>
+    </select>
+    
+    <br/>
+    <label class="n_title">Escribe una descripción de la falla</label><br/>
+    <br><br/>
+    <textarea name="mensaje" class="mensaje"></textarea>
+    
+    <div class="ultimo">
+      <button class="boton_envio">Enviar</button>
+      <img src="ajax.gif" alt="" class="ajaxgif hide" />
+      <div class="msg"></div>
+      
+    </div>
+    </form>   
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="soporte.js"></script>
+    </div><!--Contenedor-->
+    </body>
+</html>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="index.js"></script>
+<script type="text/javascript">app.initialize();
+screenWidth = $(window).width();
+screenHeight = $(window).height();
+
+</script>

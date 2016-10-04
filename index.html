@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="theme-color" content="#CC6600">
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+        <link rel="stylesheet" type="text/css" href="index.css"/>
+        <link rel="stylesheet" type="text/css" href="fonts.css"/>
+        <title>Eyc pluss Entretenimiento</title>
+        <script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+		<script type="text/javascript">app.initialize();
+		screenWidth = $(window).width();
+		screenHeight = $(window).height();
+		document.addEventListener("deviceready", onDeviceReady, false);
+		// device APIs are available//
+		function onDeviceReady() {
+        navigator.splashscreen.show();
+		}
+
+        </script>
+    </head>
+    <body>
+    
+    <div class="header">
+    <img src="header_icono.svg" alt=""/>
+    <a href="streaming.html"><img src="btn_tv.svg"/></a>
+    </div><!--Header-->
+    
+    <div class="header_page">
+    <img src="header_index.svg" alt=""/>
+    <p>
+    <strong>Bienvenido al centro de ayuda</strong><br/>
+    <span>Eyc pluss.Todo lo hacemos mas facil<br/>www.eycpluss.com</span>
+    </p>
+    <div class="limpiar"></div>
+    </div><!--Header-descuentos-->
+    
+    <div class="contenedor">
+    
+    <div class="ops_tecla btn_izquierdo">
+     <a href="descuentos.html"><img src="icono_descuentos_200x200_vectorial.svg" alt=""/><p>Descuentos</p></a>
+    </div><!--Tecla-->
+    
+    <div class="ops_tecla btn_derecho">
+     <a href="oficinas.html"><img src="icono_oficinas_200x200_vectorial.svg" alt=""/><p>Oficinas</p></a>
+    </div><!--Tecla-->
+    
+    <div class="ops_tecla btn_izquierdo">
+     <a href="soporte.html"><img src="icono_soporte_alicates_200x200_vectorial.svg" alt=""/><p>Soporte</p></a>
+    </div><!--Tecla-->
+    
+    <div class="ops_tecla btn_derecho">
+     <a href="call_center.html"><img src="icono_call-center_200x200_vectorial.svg" alt=""/><p>Call-Center</p></a>
+    </div><!--Tecla--> 
+    
+    </div><!--Contenedor-->
+
+    </body>
+</html>

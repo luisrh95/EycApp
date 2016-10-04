@@ -1,0 +1,359 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	background-color: #FFFFFF;
+	overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.limpiar{
+	width: 100%;
+	height: 1px;
+	clear: both;
+}
+.header{
+	width: 100%;
+	height: 60px;
+	background-color: #2D4385;
+	background-image: url(header_background.svg);
+	background-position: top;
+	background-repeat: no-repeat;
+}
+.header > img{
+	margin: 0px;
+	height: 60px;
+}
+a[href="streaming.html"]{
+	width: 33px;
+	height: 33px;
+	float: right;
+	margin-top: 14px;
+	margin-right: 10px;
+}
+.contenedor{
+	width: 100%;
+	height: 75%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	box-sizing: border-box;
+	padding-bottom: 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+.cont_ofic{/*CONTENEDOR ESPECIAL PARA OFICINAS*/
+	width: 100% !important;
+	height: 99% !important;
+	display: block !important;
+	padding-bottom: 5px !important;
+	margin-bottom: 5px !important;
+}
+.cont_soporte{
+	padding-top: 15px;
+	box-sizing: border-box;
+}
+.ops_tecla{
+	width: 50%;
+	height: 50%;
+	display: inline-block;
+	margin: 0px;
+	float: left;
+	padding: 5px;
+	box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+.btn_derecho:active{
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform: perspective(100px) rotateY(-1deg);
+	transform: perspective(100px) rotateY(-1deg);
+	touch-action: none !important;
+}
+.btn_izquierdo:active{
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform: perspective(100px) rotateY(1deg);
+	transform: perspective(100px) rotateY(1deg);	
+}
+.ops_tecla:hover{
+}
+.ops_tecla > a > img{
+	width: 90%;
+	display: block;
+	margin: auto;
+	outline: none;
+}
+.ops_tecla > a{
+	width: 100%;
+	height: 100%;
+	background-color: #3399CC;
+	display: block;
+	border-radius: 10px;
+	font-family: "My-sem-bol";
+	text-decoration: none;
+	text-align: center;
+	font-size: 25px;
+	color: rgba(255,255,255,1.00);
+	padding-top: 15px;
+	box-sizing: border-box;
+}
+
+.ops_tecla > a > p{
+	margin-top: 0px;
+}
+.ops_tecla > a:active{
+	background-color: #4EBDEC;
+}
+/*CABECERA DE PAGINAS*/
+.btn_volver{
+	width: 75px;
+	height: 35px;
+	background-color: rgba(240,240,240,1.00);
+	display: inline-block;
+	float: right;
+	margin-right: 5px;
+	margin-top: 12px;
+	text-align: center;
+	font-family: "My-sem-bol";
+	text-decoration: none;
+	line-height: 2;
+	font-size: 20px;
+	color: rgba(25,51,175,1.00);
+}
+.header_page{
+	width: 100%;
+	height: auto;
+	padding: 5px;
+	padding-left: 5px;
+	box-sizing: border-box;
+	background-color: #E7E7E7;
+}
+.header_page > img{
+	margin: 0px;
+	width: 60px;
+	display: inline-block;
+	float: left;
+}
+.header_page > p{
+	width: auto;
+	height: 60px;
+	padding-top: 0px !important;
+	padding: 5px;
+	box-sizing: border-box;
+	margin: 0px;
+	font-family: "My-normal";
+	float: left;
+	font-size: 18px;
+}
+.header_page > p {
+	font-size: 19px;
+}
+.hed_index > p strong{
+	font-size: 18px;
+}
+.header_page > p > span{
+	font-size: 16px;
+}
+/* OBJETOS DE PAGINAS*/
+/* DESCUENTOS Y PREMIOS*/
+.descuento_lista{
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #999999;
+	font-family: "My-normal";
+}
+.descuento_lista > p{
+	margin: 0px;
+	color: #2B2B2B;
+	text-align: justify;
+	word-wrap: break-word;
+	word-break: break-strict;
+	font-size: 17px;
+}
+.descuento_lista > p > strong{
+	color: #131313;
+	font-size: 20px;
+}
+.descuento_lista > p > a{
+	color: rgba(46,46,46,1.00);
+	font-style: italic;
+}
+/*CALL CENTER*/
+a > img[src="imagen de call center.svg"]{
+	display: block;
+	margin: 0px;
+	margin: auto;
+	width: 200px;
+	margin-top: 2px;
+}
+h2.call_center{
+	text-align: center;
+	font-family: "My-sem-bol";
+	color: #464646;
+	margin: 0px;
+}
+p.numeros{
+	text-align: center;
+	font-family: "My-normal";
+}
+p.numeros > a {
+	display: block;
+	margin-bottom: 5px;
+	color: #CC3333;
+	text-decoration: none;
+	font-family: "My-sem-bol";
+}
+/*OFICINAS*/
+.mi_oficina{
+	width: 100%;
+	height: auto;
+	border-bottom: 1px solid #999999;
+	padding: 5px;
+	box-sizing: border-box;
+}
+.mi_oficina > h2{
+	width: 100%;
+	height: auto;
+	margin: 0px;
+	font-family: "My-sem-bol";
+	color: #3D3D3D;
+	font-size: 15px;
+	line-height: 1.7;
+	padding: 0px;
+}
+.mi_oficina > h2 > img{
+	width: 20px;
+	margin: 0px;
+	float: left;
+	margin-right: 5px;
+}
+.mi_oficina > p{
+	width: 100%;
+	margin: 0px;
+	font-family: "My-normal";
+	padding-left: 24px;
+	box-sizing: border-box;
+	color: #666666;
+}
+/*SOPORTE TECNICO*/
+.n_title{
+	width: 100%;
+	height: auto;
+	font-family: "My-sem-bol";
+	margin-left: 20px;
+	font-size: 20px;
+	color: #2B2B2B;
+}
+input[type="number"]{
+	width: 85%;
+	height: 22px;
+	display: block;
+	margin-left: 20px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	font-family: "My-normal";
+}
+select[name="servicio"]{
+	width: 85%;
+	height: 30px;
+	display: block;
+	margin-left: 20px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	font-family: "My-normal";	
+}
+label{
+	font-family: "My-normal";
+	margin-left: 20px;
+}
+textarea{
+	margin-left: 20px;
+	margin-bottom: 10px;
+	width: 85%;
+	height: 140px;
+	display: block;
+	resize: none;
+}
+/*BOTON INTERACTIVO*/
+.ultimo{
+	width: 100%;
+	height: 35px;
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+.ultimo > button{
+	width: 100px;
+	height: 35px;
+	display: inline-block;
+	float: left;
+	border: none;
+	background-color: rgba(28,88,151,1.00);
+	font-family: "My-normal";
+	color: rgba(255,255,255,1.00);
+	font-size: 20px;
+	margin-right: 5px;
+}
+.msg{
+	width: 100px;
+	height: 35px;
+    color: rgba(0,0,0,1.00);
+	display: inline-block;
+	float: left;
+	text-align: center;
+	font-family: "My-sem-bol";
+	color: rgba(255,255,255,1.00);
+	line-height: 2.2;
+}
+.ajaxgif{
+	margin-top: 9px;
+}
+.hide{
+	display: none;
+}
+.msg_ok{
+    background: #589D05;
+}
+.msg_error{
+    background: red;
+}
+/*REZIZE MEDIA*/
+@media (max-width: 320px) {
+.header_page > p{
+	width: auto;
+	height: 60px;
+	padding-top: 0px !important;
+	padding: 5px;
+	box-sizing: border-box;
+	margin: 0px;
+	font-family: "My-normal";
+	font-size: 16px;
+}
+.hed_index > p strong{
+	font-size: 16px;
+}
+.header_page > p > span{
+	font-size: 14px;
+}
+}
+iframe[src="http://www.ustream.tv/embed/22303374?html5ui"]{
+	width: 95%;
+	height: auto;
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+	border: 0 none transparent;
+}
