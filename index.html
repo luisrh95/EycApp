@@ -11,16 +11,6 @@
         <link rel="stylesheet" type="text/css" href="fonts.css"/>
         <title>Eyc pluss Entretenimiento</title>
         <script type="text/javascript" src="cordova.js"></script>
-		<script type="text/javascript" src="index.js"></script>
-		<script type="text/javascript">app.initialize();
-		screenWidth = $(window).width();
-		screenHeight = $(window).height();
-		document.addEventListener("deviceready", onDeviceReady, false);
-		// device APIs are available//
-		function onDeviceReady() {
-        navigator.splashscreen.show();
-		}
-        </script>
 		 <script type="text/javascript" charset="utf-8">
 		 // Wait for device API libraries to load
 		  //
@@ -57,6 +47,17 @@
 			 }
 
     </script>
+		<script type="text/javascript" src="index.js"></script>
+		<script type="text/javascript">app.initialize();
+		screenWidth = $(window).width();
+		screenHeight = $(window).height();
+		document.addEventListener("deviceready", onDeviceReady, false);
+		// device APIs are available//
+		function onDeviceReady() {
+        navigator.splashscreen.show();
+		}
+        </script>
+
     </head>
     <body>
     
