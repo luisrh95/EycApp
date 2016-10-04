@@ -27,10 +27,10 @@
             states[Connection.CELL_3G]  = 'Cell 3G connection';
             states[Connection.CELL_4G]  = 'Cell 4G connection';
             states[Connection.CELL]     = 'Cell generic connection';
-            states[Connection.NONE]     = 'No network connection';
+            states[Connection.NONE]     = 'falsered';
 
             alert('Connection type: ' + states[networkState]);
-			if(states[networkState]='No network connection'){
+			if(states[networkState]=='falsered'){
 				alert('Sin conexion');
 			}else{
 				alert('Con conexion');
@@ -40,7 +40,7 @@
     </script>
   </head>
   <body>
-    <p>A dialog box will report the network state.</p>
+    <p>Comprobando conexion.</p>
   </body>
 </html>
 
