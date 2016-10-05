@@ -28,7 +28,7 @@ html,body{
 	margin: 0px;
 	height: 60px;
 }
-a[href="streaming.html"]{
+a#streaming{
 	width: 33px;
 	height: 33px;
 	float: right;
@@ -369,4 +369,10 @@ iframe[src="http://www.ustream.tv/embed/22303374?html5ui"]{
 .senal > strong{
 	font-size: 14px;
 	color: #787878;
+}
+.img_error_red{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin: auto;
 }
