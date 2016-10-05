@@ -360,9 +360,6 @@ iframe[src="http://www.ustream.tv/embed/22303374?html5ui"]{
 	display: block;
 	margin: auto;
 	margin-top: 10px;
-	background-image: url(loding.gif);
-	background-repeat: no-repeat;
-	background-position: center;
 }
 .senal{
 	text-align: center;
