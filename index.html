@@ -41,16 +41,28 @@
 			if(states[networkState]=='nonered'){
 				
 		           $(document).ready(function(){
-				   var titulo = $("#descuentos").attr('href');
-				   $("#descuentos").attr('href', 'error.html');
-				   titulo = $("#descuentos").attr('href');
+				   var desc = $("#descuentos").attr('href');
+				   $("#descuentos").attr('href', 'no_red.html');
+				   desc = $("#descuentos").attr('href');
+				   });
+				   
+				   $(document).ready(function(){
+				   var stem = $("#streaming").attr('href');
+				   $("#streaming").attr('href', 'no_red.html');
+				   stem = $("#streaming").attr('href');
 				   });	
 				   	
 			}else{
 		           $(document).ready(function(){
-				   var titulo = $("#descuentos").attr('href');
+				   var desc = $("#descuentos").attr('href');
 				   $("#descuentos").attr('href', 'descuentos.html');
-				   titulo = $("#descuentos").attr('href');
+				   desc = $("#descuentos").attr('href');
+				   });	
+				   
+				   $(document).ready(function(){
+				   var stem = $("#streaming").attr('href');
+				   $("#streaming").attr('href', 'streaming.html');
+				   stem = $("#streaming").attr('href');
 				   });	
 				   			
 			}
@@ -75,7 +87,7 @@
     
     <div class="header">
     <img src="header_icono.svg" alt=""/>
-    <a href="streaming.html"><img src="btn_tv.svg"/></a>
+    <a id="streaming" href="streaming.html"><img src="btn_tv.svg"/></a>
     </div><!--Header-->
     
     <div class="header_page">
