@@ -39,9 +39,9 @@
             alert('Connection type: ' + states[networkState]);
            
             if(states[networkState]=='nonered'){ 
-                  
+                 $("#btn-des").append(' <a class="descuentos" href="error.html"><img src="icono_descuentos_200x200_vectorial.svg" alt=""/><p>Descuentos</p></a>'); 
 			}else{
-                      
+                 $("#btn-des").append(' <a class="descuentos" href="descuentos.html"><img src="icono_descuentos_200x200_vectorial.svg" alt=""/><p>Descuentos</p></a>');     
 
 			}
            
@@ -78,7 +78,7 @@
     
     <div class="contenedor">
     
-    <div class="ops_tecla btn_izquierdo">
+    <div id="btn-des" class="ops_tecla btn_izquierdo">
      <a class="descuentos" href="descuentos.html"><img src="icono_descuentos_200x200_vectorial.svg" alt=""/><p>Descuentos</p></a>
     </div><!--Tecla-->
     
