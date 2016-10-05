@@ -49,10 +49,11 @@ a#streaming{
 }
 .cont_ofic{/*CONTENEDOR ESPECIAL PARA OFICINAS*/
 	width: 100% !important;
-	height: 99% !important;
+	height: 78% !important;
 	display: block !important;
 	padding-bottom: 5px !important;
 	margin-bottom: 5px !important;
+	overflow: scroll !important;
 }
 .cont_soporte{
 	padding-top: 15px;
