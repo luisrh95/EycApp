@@ -399,12 +399,17 @@ iframe[src="http://www.ustream.tv/embed/22303374?html5ui"]{
 	padding: 15px;
 	box-sizing: border-box;
 }
-.supor_mas:hover > .mascara_recorte_on{
-	margin-top: 0px;
-}
 .mascara_recorte_on > p{
 	font-family: "My-sem-bol";
 	color: #FFFFFF;
 	font-size: 25px;
 	margin: 0px;
+}
+.capa_recorte{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.capa_recorte:hover ~ .supor_mas > .mascara_recorte_on{
+	margin-top: 0px;
 }
