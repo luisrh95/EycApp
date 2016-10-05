@@ -9,6 +9,63 @@
         <link rel="stylesheet" type="text/css" href="index.css"/>
         <link rel="stylesheet" type="text/css" href="fonts.css"/>
         <title>Eyc pluss Entretenimiento</title>
+     <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+    // Wait for device API libraries to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        checkConnection();
+    }
+
+        function checkConnection() {
+            var networkState = navigator.connection.type;
+
+            var states = {};
+            states[Connection.UNKNOWN]  = 'Unknown connection';
+            states[Connection.ETHERNET] = 'Ethernet connection';
+            states[Connection.WIFI]     = 'WiFi connection';
+            states[Connection.CELL_2G]  = 'Cell 2G connection';
+            states[Connection.CELL_3G]  = 'Cell 3G connection';
+            states[Connection.CELL_4G]  = 'Cell 4G connection';
+            states[Connection.CELL]     = 'Cell generic connection';
+            states[Connection.NONE]     = 'nonered';
+
+			if(states[networkState]=='nonered'){
+				
+		           $(document).ready(function(){
+				   var desc = $("#mascara").attr('class');
+				   $("#mascara").attr('class', 'mascara_recorte_on');
+				   desc = $("#mascara").attr('class');
+				   });
+			}else{
+		           $(document).ready(function(){
+				   var desc = $("#mascara").attr('class');
+				   $("#mascara").attr('class', 'mascara_recorte_off');
+				   desc = $("#mascara").attr('class');
+				   });	  			
+			}
+                    
+        }
+
+    </script>
+
+		<script type="text/javascript" src="index.js"></script>
+		<script type="text/javascript">app.initialize();
+		screenWidth = $(window).width();
+		screenHeight = $(window).height();
+		document.addEventListener("deviceready", onDeviceReady, false);
+		// device APIs are available//
+		function onDeviceReady() {
+        navigator.splashscreen.show();
+		}
+        </script>
+  
     </head>
     <body>
     
@@ -16,7 +73,8 @@
     <img src="header_icono.svg" alt=""/><a class="btn_volver" href="index.html">Volver</a>
     </div><!--Header-->
     
-    <div class="header_page">
+    <div class="header_page supor_mas">
+    <div id="mascara" class="mascara_recorte_on"><p>Sin conexión a internet</p></div><!--Mascara de recorte-->
     <img src="soporte_header.svg" alt=""/>
     <p>
     <strong>Soporte técnico</strong><br/>

@@ -377,3 +377,34 @@ iframe[src="http://www.ustream.tv/embed/22303374?html5ui"]{
 	display: block;
 	margin: auto;
 }
+/*Mascara de recorte*/
+.supor_mas{
+	overflow: hidden !important;
+	height: 70px !important;
+	position: relative;
+}
+.mascara_recorte_off{
+	display: none;
+}
+.mascara_recorte_on{
+	width: 97%;
+	height: 60px;
+	position: absolute;
+	float: left;
+	margin-top: -65px;
+	display: inline-block;
+	background-color: #BF1A1D;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	padding: 15px;
+	box-sizing: border-box;
+}
+.supor_mas:hover > .mascara_recorte_on{
+	margin-top: 0px;
+}
+.mascara_recorte_on > p{
+	font-family: "My-sem-bol";
+	color: #FFFFFF;
+	font-size: 25px;
+	margin: 0px;
+}
