@@ -10,7 +10,8 @@
         <link rel="stylesheet" type="text/css" href="index.css"/>
         <link rel="stylesheet" type="text/css" href="fonts.css"/>
         <title>Eyc pluss Entretenimiento</title>
-     <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" charset="utf-8">
 
     // Wait for device API libraries to load
@@ -37,17 +38,27 @@
             states[Connection.NONE]     = 'nonered';
 
             alert('Connection type: ' + states[networkState]);
-           
-            if(states[networkState]=='nonered'){ 
-                 $("#btn-des").append(' <a class="descuentos" href="error.html"><img src="icono_descuentos_200x200_vectorial.svg" alt=""/><p>Descuentos</p></a>'); 
+			if(states[networkState]=='nonered'){
+				
+		           $(document).ready(function(){
+				   var titulo = $("#descuentos").attr('href');
+				   $("#descuentos").attr('href', 'error.html');
+				   titulo = $("#descuentos").attr('href');
+				   });	
+				   	
 			}else{
-                 $("#btn-des").append(' <a class="descuentos" href="descuentos.html"><img src="icono_descuentos_200x200_vectorial.svg" alt=""/><p>Descuentos</p></a>');     
-
+		           $(document).ready(function(){
+				   var titulo = $("#descuentos").attr('href');
+				   $("#descuentos").attr('href', 'descuentos.html');
+				   titulo = $("#descuentos").attr('href');
+				   });	
+				   			
 			}
-           
+                    
         }
 
     </script>
+
 		<script type="text/javascript" src="index.js"></script>
 		<script type="text/javascript">app.initialize();
 		screenWidth = $(window).width();
@@ -58,7 +69,7 @@
         navigator.splashscreen.show();
 		}
         </script>
-
+  
     </head>
     <body>
     
@@ -78,8 +89,8 @@
     
     <div class="contenedor">
     
-    <div id="btn-des" class="ops_tecla btn_izquierdo">
-     
+    <div class="ops_tecla btn_izquierdo">
+     <a id="descuentos" href="descuentos.html"><img src="icono_descuentos_200x200_vectorial.svg" alt=""/><p>Descuentos</p></a>
     </div><!--Tecla-->
     
     <div class="ops_tecla btn_derecho">
