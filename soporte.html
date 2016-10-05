@@ -43,12 +43,24 @@
 				   $("#mascara").attr('class', 'mascara_recorte_on');
 				   desc = $("#mascara").attr('class');
 				   });
+				   
+		           $(document).ready(function(){
+				   var masr = $("#mascara_grande").attr('class');
+				   $("#mascara_grande").attr('class', 'capa_recorte');
+				   masr = $("#mascara_grande").attr('class');
+				   });
 			}else{
 		           $(document).ready(function(){
 				   var desc = $("#mascara").attr('class');
 				   $("#mascara").attr('class', 'mascara_recorte_off');
 				   desc = $("#mascara").attr('class');
-				   });	  			
+				   });	
+				   
+		           $(document).ready(function(){
+				   var masr = $("#mascara_grande").attr('class');
+				   $("#mascara_grande").attr('class', 'mascara_recorte_off');
+				   masr = $("#mascara_grande").attr('class');
+				   });  			
 			}
                     
         }
@@ -68,7 +80,7 @@
   
     </head>
     <body>
-    <div class="capa_recorte"></div>
+    <div id="mascara_grande" class="capa_recorte"></div>
     <div class="header supor_zindex">
     <img src="header_icono.svg" alt=""/><a class="btn_volver" href="index.html">Volver</a>
     </div><!--Header-->

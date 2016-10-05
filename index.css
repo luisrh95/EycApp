@@ -293,10 +293,6 @@ textarea{
 	display: block;
 	resize: none;
 }
-form[name="soporte_tecnico"]{
-	position: relative;
-	z-index: 999;
-}
 /*BOTON INTERACTIVO*/
 .ultimo{
 	width: 100%;
@@ -417,7 +413,6 @@ iframe[src="http://www.ustream.tv/embed/22303374?html5ui"]{
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	background-color: rgba(193,49,51,0.37);
 }
 .capa_recorte:hover ~ .supor_mas > .mascara_recorte_on{
 	margin-top: 0px;
